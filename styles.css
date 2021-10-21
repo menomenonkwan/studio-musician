@@ -1,0 +1,54 @@
+html {
+  /* font-size: 25px; */
+}
+body {
+  /* font-family: 'Slabo 27px', serif; */
+  /* font-family: 'Roboto', sans-serif; */
+}
+header {
+  font-family: "Dancing Script", cursive;
+  background-color: antiquewhite;
+  background-image: url(images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+}
+.wrapper {
+  padding: 0.5rem 1rem;
+}
+.wrapper a {
+  color: whitesmoke;
+  transition: all 0.3s ease;
+}
+.wrapper a:hover {
+  color: #00bcd4;
+}
+.section {
+  padding: 4vw 0;
+}
+.row {
+  padding: 1rem 0;
+}
+h3 {
+  margin: 0;
+}
+
+.parallax-container {
+  height: 350px;
+}
+.tabs .indicator {
+  background-color: #1a237e;
+}
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+  background: transparent;
+}
+.social-menu li {
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 500px) {
+  header {
+    min-height: 100vh;
+  }
+}

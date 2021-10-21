@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Slabo+27px&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet"> 
   <!-- font awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <!--Import Google Icon Font-->
@@ -13,23 +17,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
   <title>Studio Musician</title>
-  <style>
-    header {
-      background-color: antiquewhite;
-      background-image: url(images/shadow.jpg);
-      background-size: cover;
-      background-position: center;
-      min-height: 400px;
-    }
-    .wrapper {
-      padding: 0 2rem;
-    }
-    @media (min-width: 500px) {
-      header {
-        min-height: 100vh;
-      }
-    }
-  </style>
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body>
   
@@ -42,9 +30,18 @@
           <i class="material-icons">menu</i>
         </a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#">Photos</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#photos">Photos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a></li>
         </ul>
         <ul class="sidenav grey lighten-2" id="mobile-menu">
           <li><a href="#">Photos</a></li>
@@ -56,32 +53,184 @@
   </header>
 
   <!-- photo / grid -->
+  <section class="container section scrollspy" id="photos">
+    <div class="row">
+      <div class="col s12 l4">
+        <img src="images/record.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6">
+        <h3 class="indigo-text text-darken-4">Studio Recording</h3>
+        <p class="offset-l1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae sapiente natus quam velit iste libero omnis nihil ipsa doloremque, explicabo ea nostrum sint.</p>
+      </div>
+    </div>
+    <div class="row grey lighten-4">
+      <div class="col s12 l4 push-l7 offset-l1">
+        <img src="images/performance.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 pull-l5 right-align offset-l1">
+        <h3 class="indigo-text text-darken-4">Live Performance</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae sapiente natus quam velit iste libero omnis nihil ipsa doloremque, explicabo ea nostrum sint.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4">
+        <img src="images/lessons.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6">
+        <h3 class="indigo-text text-darken-4">Lessons</h3>
+        <p class="offset-l1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae sapiente natus quam velit iste libero omnis nihil ipsa doloremque, explicabo ea nostrum sint.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="images/studio.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
 
   <!-- services / tabs -->
+  <section class="container section scrollspy" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="indigo-text text-darken-4">What I do...</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem architecto sunt officiis ullam culpa vero ipsa consequatur placeat, doloribus, eum libero omnis minima hic! Aut soluta natus mollitia ex.</p>
+        <p>Nobis odit placeat earum vel vitae nam maiores suscipit quidem cupiditate saepe, ducimus magni dicta nesciunt explicabo illo? Fugiat, eum necessitatibus assumenda possimus nostrum inventore est deleniti laudantium eius ipsa?</p>
+      </div>
+      <div class="col s12 l6 offset-l2">
+        <ul class="tabs">
+          <li class="tab col s4">
+            <a href="#recording" class="indigo-text text-darken-4">Studio</a>
+          </li>
+          <li class="tab col s4">
+            <a href="#performance" class="indigo-text text-darken-4">Live</a>
+          </li>
+          <li class="tab col s4">
+            <a href="#lessons" class="indigo-text text-darken-4">Lessons</a>
+          </li>
+        </ul>
+        <div class="col s12" id="recording">
+          <p class="flow-text indigo-text text-darken-4">RECORDING</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni necessitatibus placeat quae aperiam consequatur, adipisci alias nam, quas, eos iusto quibusdam? Consequuntur illo doloribus quaerat cupiditate repudiandae quos dolorem? Deserunt?</p>
+          <p>Cupiditate amet et, facilis deserunt autem, repellat in sit iste mollitia excepturi minus laboriosam culpa minima? Cum est tempore, tenetur ab quod numquam? Omnis nemo itaque distinctio nisi delectus nihil!</p>
+        </div>
+        <div class="col s12" id="performance">
+          <p class="flow-text indigo-text text-darken-4">PERFORMANCE</p>
+          <p>Quaerat commodi minus quasi, nam molestiae ullam repudiandae repellendus eius veritatis iusto architecto sit, adipisci voluptatem. Omnis perferendis debitis voluptatem doloremque, dignissimos neque vero nulla, dolor voluptatibus culpa hic magni.</p>
+          <p>Veniam eos voluptatibus est possimus consequatur! Ea voluptas dolores iste nemo sequi quia at commodi amet ratione, non nisi, facere, veritatis autem numquam? Ullam velit quod accusantium, ducimus earum nam.</p>
+        </div>
+        <div class="col s12" id="lessons">
+          <p class="flow-text indigo-text text-darken-4">LESSONS</p>
+          <p>Quo explicabo nam, accusantium sed, mollitia repellat corporis error exercitationem earum quis, ab dignissimos repellendus asperiores impedit eligendi ad voluptatem itaque non saepe inventore neque! Blanditiis maxime non deserunt et!</p>
+        </div>
+      </div>
+    </div>
+  </section>  
+
 
   <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="images/studio2.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
 
+ 
   <!-- contact form -->
-
+  <section class="section container scrollspy" id="contact">
+    <div class="row">
+      <div class="col s12 l5">
+        <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta quae iste optio cum veniam, sed iusto officiis quis hic quam perspiciatis voluptate mollitia harum maxime qui! Esse, voluptates ducimus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum soluta quae iste optio cum veniam, sed iusto officiis quis hic quam perspiciatis voluptate mollitia harum maxime qui! Esse, voluptates ducimus!</p>
+      </div>
+      <div class="col s12 l5 offset-l2">
+        <form action="">
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" id="email">
+            <label for="email">Your Email</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea id="message" class="materialize-textarea"></textarea>
+            <label for="message">Your message</label>
+          </div>
+          <div class="input-field">
+            <input type="text" id="date" class="datepicker">
+            <label for="date">Choose a date you need me for...</label>
+          </div>
+          <div class="input-field">
+            <input type="text" id="time" class="timepicker">
+            <label for="time">Choose a time you need me for...</label>
+          </div>
+          <div class="input-field">
+            <p>Services required...</p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Studio Recording</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Live Performance</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Lessons</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field">
+            <button class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  
   <!-- footer -->
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l6">
+          <h5>About Me</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis id ipsum in excepturi, expedita ullam voluptatum repudiandae velit dolorem distinctio nesciunt asperiores, error, corporis aut harum similique laboriosam vero.</p>
+        </div>
+        <div class="col s12 l4 offset-12">
+          <h5>Connect</h5>
+          <ul class="social-menu">
+            <li>
+              <a href="#" class="btn-floating btn-small indigo darken-4"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+            <li>
+              <a href="#" class="btn-floating btn-small indigo darken-4"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="grey-text text-lighten-3">Twitter</a>
+            </li>
+            <li>
+              <a href="#" class="btn-floating btn-small indigo darken-4"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="grey-text text-lighten-3">Instagram</a>
+            </li>
+            <li>
+              <a href="#" class="btn-floating btn-small indigo darken-4"><i class="fab fa-linkedin"></i></a>
+              <a href="#" class="grey-text text-lighten-3">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">&copy; <span class="year"></span> Brannon Lee</div>
+    </div>
+  </footer>
 
   <!-- Compiled and minified JavaScript -->
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script>
-
-    document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.sidenav');
-      var instances = M.Sidenav.init(elems, {});
-    });
-
-    // $(document).ready(function(){
-
-    // $('.sidenav').sidenav();
-
-    // });
-  </script>
+  <script src="scripts.js"></script>
 </body>
 </html>
