@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <title>Studio Musician</title>
+  <style>
+    header {
+      background-color: antiquewhite;
+      background-image: url(images/shadow.jpg);
+      background-size: cover;
+      background-position: center;
+      min-height: 400px;
+    }
+    .wrapper {
+      padding: 0 2rem;
+    }
+    @media (min-width: 500px) {
+      header {
+        min-height: 100vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- navbar -->
+  <header>
+    <nav class="nav-wrapper transparent z-depth-0">
+      <div class='wrapper'>
+        <a href="#" class="center-align brand-logo cyan-text text-darken-2">A Studio Musician</a>
+        <a href="#" class="right sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Photos</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+          <li><a href="#">Photos</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- photo / grid -->
+
+  <!-- parallax -->
+
+  <!-- services / tabs -->
+
+  <!-- parallax -->
+
+  <!-- contact form -->
+
+  <!-- footer -->
+
+  <!-- Compiled and minified JavaScript -->
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems, {});
+    });
+
+    // $(document).ready(function(){
+
+    // $('.sidenav').sidenav();
+
+    // });
+  </script>
+</body>
+</html>
