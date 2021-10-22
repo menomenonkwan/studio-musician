@@ -1,9 +1,5 @@
-html {
-  /* font-size: 25px; */
-}
 body {
-  /* font-family: 'Slabo 27px', serif; */
-  /* font-family: 'Roboto', sans-serif; */
+  font-family: "Slabo 27px", serif;
 }
 header {
   font-family: "Dancing Script", cursive;
@@ -13,8 +9,13 @@ header {
   background-position: center;
   min-height: 400px;
 }
+
 .wrapper {
-  padding: 0.5rem 1rem;
+  padding: 1rem 0.5rem;
+}
+.wrapper a.brand-logo {
+  font-size: 4rem;
+  font-weight: bolder;
 }
 .wrapper a {
   color: whitesmoke;
@@ -22,6 +23,10 @@ header {
 }
 .wrapper a:hover {
   color: #00bcd4;
+}
+.sidenav li > a {
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 .section {
   padding: 4vw 0;
@@ -50,5 +55,22 @@ h3 {
 @media (min-width: 500px) {
   header {
     min-height: 100vh;
+  }
+}
+@media (min-width: 992px) {
+  .wrapper {
+    padding: 0.5rem 1.5rem;
+  }
+  .wrapper a.brand-logo {
+    font-size: 3.5rem;
+  }
+  .desk-menu a {
+    font-size: 1.5rem;
+  }
+  .desk-menu a.tooltipped {
+    margin: 0 0.5rem;
+  }
+  .desk-menu a.tooltipped:hover {
+    transform: scale(1.5);
   }
 }
