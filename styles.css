@@ -1,3 +1,6 @@
+html {
+  font-size: 18px;
+}
 body {
   font-family: "Slabo 27px", serif;
 }
@@ -59,7 +62,7 @@ h3 {
 }
 @media (min-width: 992px) {
   .wrapper {
-    padding: 0.5rem 1.5rem;
+    padding: 1rem 2rem;
   }
   .wrapper a.brand-logo {
     font-size: 3.5rem;
@@ -72,5 +75,11 @@ h3 {
   }
   .desk-menu a.tooltipped:hover {
     transform: scale(1.5);
+  }
+  .social-menu a {
+    transition: all 0.3s ease;
+  }
+  .social-menu a:hover {
+    margin-right: 0.5rem;
   }
 }
